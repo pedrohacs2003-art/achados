@@ -1,58 +1,7 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Achadinhos</title>
-<style>
-  :root { --bg:#fafafa; --card:#fff; --ink:#1d2330; --muted:#667085; --line:#e9ebef; --accent:#ee4d2d; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
-  header { background:var(--accent); color:#fff; padding:18px 16px 14px; position:sticky; top:0; z-index:1; }
-  header h1 { margin:0 0 10px; font-size:22px; }
-  header input { width:100%; padding:10px 12px; border:0; border-radius:8px; font-size:16px; }
-  main { max-width:720px; margin:0 auto; padding:12px 16px 40px; }
-  .item { display:grid; grid-template-columns:auto 84px 1fr; gap:12px; align-items:center; background:var(--card);
-          border:1px solid var(--line); border-radius:12px; padding:10px; margin-bottom:10px; scroll-margin-top:110px; }
-  .item:target { outline:3px solid var(--accent); }
-  .num { font-weight:800; font-size:20px; min-width:44px; text-align:center; color:var(--accent); }
-  .item img { width:84px; height:84px; object-fit:cover; border-radius:8px; background:var(--line); }
-  .name { font-size:15px; margin-bottom:8px; }
-  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:8px 14px;
-         border-radius:8px; font-weight:600; font-size:14px; }
-  .empty { color:var(--muted); text-align:center; padding:40px 0; }
-  footer { color:var(--muted); font-size:13px; text-align:center; padding:20px 16px; }
-</style>
-</head>
-<body>
-<header>
-  <h1>Achadinhos</h1>
-  <input id="busca" type="search" placeholder="Digite o número do vídeo ou o nome do produto" autocomplete="off">
-</header>
-<main id="lista">
-
-  <div class="item" id="p1" data-busca="1 ultra hidratação efeito teia com óleos marroquinos - ouro marroquino - fina maria profissional">
-    <div class="num">nº 1</div>
-    <img src="img/1.jpg" alt="" loading="lazy">
-    <div>
-      <div class="name">ULTRA HIDRATAÇÃO EFEITO TEIA COM ÓLEOS MARROQUINOS - OURO MARROQUINO - FINA MARIA PROFISSIONAL</div>
-      <a class="btn" href="https://s.shopee.com.br/3g5NKPz6AX" target="_blank" rel="noopener sponsored">Ver na Shopee</a>
-    </div>
-  </div>
-
-</main>
-<footer>Links de afiliado: posso ganhar comissão sem custo extra para você.</footer>
-<script>
-  const busca = document.getElementById("busca");
-  busca.addEventListener("input", () => {
-    const q = busca.value.trim().toLowerCase().replace(/^n[ºo°]?\s*/, "");
-    document.querySelectorAll(".item").forEach(el => {
-      const words = el.dataset.busca;
-      const num = words.split(" ")[0];
-      const hit = /^\d+$/.test(q) ? num === q : words.includes(q);  // número: só o produto com esse número
-      el.style.display = !q || hit ? "" : "none";
-    });
-  });
-</script>
-</body>
-</html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=https://garimpeidepra.github.io/">
+<link rel="canonical" href="https://garimpeidepra.github.io/">
+<title>Achadinhos</title></head>
+<body><p>A vitrine mudou: <a href="https://garimpeidepra.github.io/">garimpeidepra.github.io</a></p>
+<script>location.replace("https://garimpeidepra.github.io/" + location.hash)</script></body></html>
